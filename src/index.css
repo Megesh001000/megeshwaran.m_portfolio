@@ -1,0 +1,72 @@
+html{
+    scroll-behavior: smooth;
+   
+
+}   
+body{
+     cursor: url(assets/cursor.cur) 16 16,auto;
+     
+}
+
+
+.reveal{
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.9s ease;
+}
+
+.reveal.active{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.reveal-left{
+    transform: translateX(-60px);
+}
+
+.reveal-right{
+    transform: translateX(60px);
+}
+
+.reveal-scale{
+    transform: scale(0.9);
+}
+.reveal-down{
+    transform: translateY(-60px);
+}
+
+
+.reveal.active.reveal-left,
+.reveal.active.reveal-right,
+.reveal.active.reveal-scale,
+.reveal.active.reveal-down{
+    transform: none;
+}
+
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-track{
+    background:  #05050a;
+}
+
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(
+          180deg,
+    #7dd3fc,
+    #38bdf8,
+    #0ea5e9,
+    #6366f1
+    );
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: linear-gradient(
+         180deg,
+    #38bdf8,
+    #0ea5e9,
+    #6366f1
+    );
+}
